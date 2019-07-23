@@ -1,0 +1,51 @@
+<html>
+<head>
+    <Title>customer management system</Title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+    
+</head>
+<center>
+<body>
+  <div><h1 > CUSTOMER MANAGEMENT SYSTEM</h1></div>
+  <table>
+      <tr>
+          <td>  
+       <form>
+       <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname"id="firstname" size=20required/>
+                    <p id="firstname_error"></p>
+                </div><br>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname"id="lastname" size=20 />
+                    <p id="lastname_error"></p>
+                </div><br>
+                <div>
+                    <label for="emailid">Email:   </label>
+                    <input type="email"  placeholder="Enter Email" name="emailid"id="emailid" pattern=".+@avenger.com" size=20 required/>
+                    <p id="emailid_error"></p>   
+                </div><br>
+                <div>
+                    <label for="mobileno">Mobile: </label>
+                    <input type="tel" placeholder="Enter mobile number"name="mobileno"id="mobileno" maxlength="10" pattern="[0-9]{10}" size=20 required/>
+                    <p id="mobileno_error"></p>  
+                </div><br>
+                <div>
+                    <input type="submit"  value="ADD"/>
+                </div>
+                
+
+            </form>
+        </td>
+        </tr>
+    </table>
+
+  
+  </form>
+  <br>
+  <div id="Display"></div>
+  </body>
+</center>
+</html>
